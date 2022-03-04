@@ -12,7 +12,16 @@
 2. Placer filerne et sted, der ikke synces med iCloud mm. og åbn projektet i VS Code
 3. Åbn Terminalen i VS Code og kør et par kodestumper
 4. Kør dev-server via Terminalen - og sluk igen:-)
-6. Git init (initialiser git repo)
+6. Git shit: 
+    Opret et repo på git
+    Git init (initialiser git repo)
+    git add --all
+    git commit -m “beskrivelse af dit commit”
+    git branch -M main
+    git remote add origin https://github.com/stefangrage/moodygramstest.git (dit git repo)
+    git push -u origin main
+
+    Derefter kan du pushe og pulle til git som normalt
 5. Brug Tailwind
 
 ---
@@ -67,3 +76,12 @@ Begynd at bruge Tailwinds hjælpeklasser til at style dit indhold. Find `index.h
 Navigér derefter til [Tailwinds dokumentation](https://tailwindcss.com/docs/), for at se alle hjælpeklasser samt øvrige opsætningsmuligheder.
 
 ![Untitled](/README/Untitled.png)
+
+## NÆSTE. Note til selv: Fjern dark mode med regexp:
+Søg efter:
+dark:[a-z0-9-:]*
+
+Vælg alle matches med option + enter
+Slet alle options med option + delete
+
+Så er dark mode væk:-)
