@@ -1,6 +1,6 @@
 # Installation (trin-for-trin)
 
-💡 **Sådan kommer du i gang med Moodygrams.dk**
+💡 **Sådan kommer du i gang med lunefuldlykke.dk**
 
 **_OBS!_** _Det er ikke meningen, at du skal vide alt om, hvad du skal i denne guide._
 
@@ -18,7 +18,7 @@
     git add --all
     git commit -m “beskrivelse af dit commit”
     git branch -M main
-    git remote add origin https://github.com/stefangrage/moodygramstest.git (dit git repo)
+    git remote add origin https://github.com/ditbrugernavn/lunefuldlykke.git (dit git repo)
     git push -u origin main
 
     Derefter kan du pushe og pulle til git som normalt
@@ -84,4 +84,4 @@ dark:[a-z0-9-:]*
 Vælg alle matches med option + enter
 Slet alle options med option + delete
 
-Så er dark mode væk:-)
+Så er dark mode væk:-) 
