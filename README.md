@@ -2,8 +2,6 @@
 
 💡 **Sådan kommer du i gang med lunefuldlykke.dk**
 
-**_OBS!_** _Det er ikke meningen, at du skal vide alt om, hvad du skal i denne guide._
-
 ---
 
 **Trin:**
@@ -12,33 +10,23 @@
 2. Placer filerne et sted, der ikke synces med iCloud mm. og åbn projektet i VS Code
 3. Åbn Terminalen i VS Code og kør et par kodestumper
 4. Kør dev-server via Terminalen - og sluk igen:-)
-6. Git shit: 
-    Opret et repo på git
-    Git init (initialiser git repo)
-    git add --all
-    git commit -m “beskrivelse af dit commit”
-    git branch -M main
-    git remote add origin https://github.com/ditbrugernavn/lunefuldlykke.git (dit git repo)
-    git push -u origin main
-
-    Derefter kan du pushe og pulle til git som normalt
-5. Brug Tailwind
+5. Git halløj 
+6. Byg videre på sitet:-)
 
 ---
 
-## 1. Hent filer
+## 1. Download alle filer fra Github
 
-Download filer fra: (link)
+Download filer fra: [https://github.com/stefangrage/lunefuldlykke.git ]https://github.com/stefangrage/lunefuldlykke.git )  
 
 ---
 
-## 2. Åbn projekt
-
+## 2. Placer filerne et sted, der ikke synces med iCloud mm. og åbn projektet i VS Code
 
 
 ---
 
-## 3. Åbn Terminalen i VS Code
+## 3. Åbn Terminalen i VS Code og kør et par kodestumper
 
 Åbn terminalen via **View** i VS Code, og kopier derefter følgende kode ind i terminal-vinduet og tryk _Enter_
 
@@ -46,17 +34,9 @@ Download filer fra: (link)
 npm install
 ```
 
-<details>
-    <summary>Se eksempel</summary>
-
-![SCR-20220119-lgw.png](/README/SCR-20220119-lgw.png)
-![npm-i.jpg](/README/npm-i.jpg)
-
-</details>
-
 ---
 
-## 4. Kør dev-server via Terminalen
+## 4. Kør dev-server via Terminalen - og sluk igen:-)
 
 Setuppet virker ikke med den traditionelle Live-Sever. Så derfor skal vi køre vores egen dev-server. Det gør du ved at kopiere følgende ind i terminal-vinduet efterfulgt af _Enter_
 
@@ -64,24 +44,51 @@ Setuppet virker ikke med den traditionelle Live-Sever. Så derfor skal vi køre 
 npm run dev
 ```
 
+Check at alt ser ud som det skal - du skulle gerne kunne navigere rundt på sitet, og se nogen forskellige templates.
+
 💡 **OBS!** — Nogle gange er det nødvendigt at stoppe serveren, hvilket gøres ved at indtaste `ctrl+c` i terminal-vinduet.
 Hvis du skal starte serveren igen, brug da `npm run dev` igen.
 
+Sluk terminalen igen med `ctrl+c`
+
 ---
 
-## 5. Brug Tailwind
+## 5. Git halløj
+
+Opret et repo på github. Kopier adressen dertil, og kør derefter følgende kommandoer via terminalen:
+
+```
+    Git init 
+```
+Det initialiserer dit git repo i din mappe
+
+
+```
+    git add --all
+    git commit -m “beskrivelse af dit commit”
+    git branch -M main
+```
+Her klargør du dit første commit - skift teksten "beskrivelse af dit commit ud med din egen tekst"
+
+
+```
+     git remote add origin https://github.com/ditbrugernavn/lunefuldlykke.git
+```
+Skift https://github.com/ditbrugernavn/lunefuldlykke.git ud med navnet på dit repo - så får du forbundet det hele korrekt
+
+
+```
+     git push -u origin main
+```
+Her pusher du dit nye projekt til dit tomme repo
+
+Check at alt fungerer som det skal på github 
+
+Derefter kan du pushe og pulle til git som normalt:-)
 
 Begynd at bruge Tailwinds hjælpeklasser til at style dit indhold. Find `index.html` under mappen `src`.
 
-Navigér derefter til [Tailwinds dokumentation](https://tailwindcss.com/docs/), for at se alle hjælpeklasser samt øvrige opsætningsmuligheder.
 
-![Untitled](/README/Untitled.png)
+## 6. Byg videre på sitet
 
-## NÆSTE. Note til selv: Fjern dark mode med regexp:
-Søg efter:
-dark:[a-z0-9-:]*
-
-Vælg alle matches med option + enter
-Slet alle options med option + delete
-
-Så er dark mode væk:-) 
+Herefter kan du bare arbejde løs på sitet - med eller uden tailwind, alt efter hvad du foretrækker.
